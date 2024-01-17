@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonCollectionViewCell" id="gTV-IL-0wX" customClass="PersonCollectionViewCell" customModule="Assignment_JSON_parsing_Database_CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="111"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhu-Ff-7Eu">
+                        <rect key="frame" x="5" y="5" width="130" height="30"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="3EA-d5-wqw"/>
+                            <constraint firstAttribute="height" constant="30" id="dfO-eo-ysg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4V-ei-l9v">
+                        <rect key="frame" x="5" y="40" width="130" height="30"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L95-jk-7Qy">
+                        <rect key="frame" x="5" y="75" width="130" height="30"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Nhu-Ff-7Eu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="1Ab-1h-yXx"/>
+                <constraint firstItem="Nhu-Ff-7Eu" firstAttribute="height" secondItem="S4V-ei-l9v" secondAttribute="height" id="4te-rZ-YRh"/>
+                <constraint firstItem="L95-jk-7Qy" firstAttribute="top" secondItem="S4V-ei-l9v" secondAttribute="bottom" constant="5" id="5ES-aa-FZQ"/>
+                <constraint firstItem="S4V-ei-l9v" firstAttribute="top" secondItem="Nhu-Ff-7Eu" secondAttribute="bottom" constant="5" id="7Vb-gC-Vtx"/>
+                <constraint firstItem="Nhu-Ff-7Eu" firstAttribute="height" secondItem="L95-jk-7Qy" secondAttribute="height" id="ACN-Ge-DqJ"/>
+                <constraint firstItem="Nhu-Ff-7Eu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="C5r-3q-jXV"/>
+                <constraint firstItem="Nhu-Ff-7Eu" firstAttribute="leading" secondItem="L95-jk-7Qy" secondAttribute="leading" id="Ifi-bR-Lor"/>
+                <constraint firstItem="Nhu-Ff-7Eu" firstAttribute="leading" secondItem="S4V-ei-l9v" secondAttribute="leading" id="cS0-Lh-Qu4"/>
+                <constraint firstItem="Nhu-Ff-7Eu" firstAttribute="width" secondItem="L95-jk-7Qy" secondAttribute="width" id="eG3-e5-Ik2"/>
+                <constraint firstItem="Nhu-Ff-7Eu" firstAttribute="width" secondItem="S4V-ei-l9v" secondAttribute="width" id="q1w-lX-bEs"/>
+            </constraints>
+            <size key="customSize" width="142" height="111"/>
+            <connections>
+                <outlet property="idLabel" destination="Nhu-Ff-7Eu" id="ZF2-yH-tGk"/>
+                <outlet property="nameLabel" destination="S4V-ei-l9v" id="3cT-yM-jbA"/>
+                <outlet property="userNameLabel" destination="L95-jk-7Qy" id="aHh-qo-u6a"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="150.33482142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>
